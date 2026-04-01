@@ -1,16 +1,16 @@
-# React + Vite
+# DigiTools-Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern product showcase and shopping cart web app. Browse digital tools, add to cart, and manage selections – all with smooth toast notifications.
 
-Currently, two official plugins are available:
+#  Technologies Used
+- React.js
+- Tailwind CSS + DaisyUI
+- JavaScript (ES6+)
+- React-Toastify (NPM package)
+- JSON (product data)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+#  Features
+1. **Product Gallery & Toggle View** – Display 6 product cards in a responsive 3‑column grid; switch between **Product** and **Cart** views via toggle buttons.
+2. **Cart Management** – Add items with a “Buy Now” button, view cart in a single column, remove individual items, or clear all with “Proceed to Checkout”. Cart count updates in navbar.
+3. **Responsive Design & Toast Alerts** – Fully responsive layout following Figma design; all actions (add, remove, checkout) trigger elegant React‑Toastify notifications.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
