@@ -8,6 +8,11 @@ const CartItems = ({
 }) => {
 //   const [total, setTotal] = useState(0)
 const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+
+const checkOut =()=>{
+    setCartItems([])
+    setTotalItems(0)
+}
     
   return (
     <div className={`card p-6 shadow-2xs border border-gray-200`}>
@@ -42,7 +47,7 @@ const total = cartItems.reduce((sum, item) => sum + item.price, 0);
         <p className="text-gray-400">Total:</p>
         <h3 className="text-2xl font-bold">${total}</h3>
       </div>
-      <button className="btn my-4 rounded-full bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white">
+      <button onClick={()=>checkOut()} className="btn my-4 rounded-full bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white">
         Proceed to Checkout
       </button>
     </div>

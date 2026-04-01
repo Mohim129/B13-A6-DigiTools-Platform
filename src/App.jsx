@@ -23,10 +23,15 @@ function App() {
   const[totalItems,setTotalItems] = useState(0)
   const [cartItems, setCartItems] = useState([]);
 
+  const [selectedType, setSelectedType] = useState(true);
+
   return (
     <>
       <header>
-        <Navbar totalItems={totalItems}></Navbar>
+        <Navbar
+          totalItems={totalItems}
+          setSelectedType={setSelectedType}
+        ></Navbar>
         <Hero></Hero>
       </header>
       <main>
@@ -42,6 +47,8 @@ function App() {
             totalItems={totalItems}
             cartItems={cartItems}
             setCartItems={setCartItems}
+            selectedType={selectedType}
+            setSelectedType={setSelectedType}
           ></PremiumTools>
         </Suspense>
         <Steps></Steps>
@@ -51,7 +58,7 @@ function App() {
       <footer>
         <Footer></Footer>
       </footer>
-      <ToastContainer/>
+      <ToastContainer />
     </>
   );
 }

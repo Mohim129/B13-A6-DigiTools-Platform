@@ -1,4 +1,4 @@
-import React, {use, useState} from 'react';
+import React, {use} from 'react';
 import ToolCard from '../ToolCard/ToolCard';
 import CartItems from '../CartItems/CartItems';
 
@@ -8,14 +8,15 @@ const PremiumTools = ({
   totalItems,
   cartItems,
   setCartItems,
+  selectedType,
+  setSelectedType,
 }) => {
   const tools = use(toolsPromise);
 
-  const [selectedType, setSelectedType] = useState(true);
+  // const [selectedType, setSelectedType] = useState(true);
 
   return (
     <div>
-      
       <div className="py-30 container mx-auto grid gap-6">
         <div className="grid gap-6 text-center">
           <h1 className="text-5xl font-bold">Premium Digital Tools</h1>
@@ -43,7 +44,9 @@ const PremiumTools = ({
               className={`btn rounded-full ${selectedType ? "" : "bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white"}`}
             >
               Cart{" "}
-              <span className={`${totalItems === 0 ? "hidden" : ""}`}>({totalItems})</span>
+              <span className={`${totalItems === 0 ? "hidden" : ""}`}>
+                ({totalItems})
+              </span>
             </button>
           </div>
           <div
