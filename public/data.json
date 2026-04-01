@@ -6,6 +6,7 @@
     "price": 29,
     "billing": "Mo",
     "badge": "Best Seller",
+    "badgeColor": "bg-warning/20 text-warning",
     "icon":"https://i.ibb.co.com/5WsymG5c/writing-2327400-1.png",
     "features": [
       "Unlimited AI generations",
@@ -21,6 +22,7 @@
     "price": 49,
     "billing": "One-Time",
     "badge": "Popular",
+    "badgeColor": "bg-primary/20 text-primary",
     "icon":"https://i.ibb.co.com/67kkCLrc/design-tool.png",
     "features": ["2000+ templates", "Monthly updates", "Commercial license"],
     "buttonText": "Buy Now"
@@ -32,6 +34,7 @@
     "price": 19,
     "billing": "Mo",
     "badge": "New",
+    "badgeColor": "bg-success/20 text-success",
     "icon": "https://i.ibb.co.com/5gv5P9ct/portfolio.png",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
     "buttonText": "Buy Now"
@@ -43,6 +46,7 @@
     "price": 79,
     "billing": "Mo",
     "badge": "Popular",
+    "badgeColor": "bg-primary/20 text-primary",
     "icon": "https://i.ibb.co.com/xwfR7kM/operation.png",
     "features": ["50+ automations", "API access", "Custom workflows"],
     "buttonText": "Buy Now"
@@ -54,6 +58,7 @@
     "price": 15,
     "billing": "One-Time",
     "badge": "New",
+    "badgeColor": "bg-success/20 text-success",
     "icon": "https://i.ibb.co.com/5gv5P9ct/portfolio.png",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
     "buttonText": "Buy Now"
@@ -65,6 +70,7 @@
     "price": 39,
     "billing": "Mo",
     "badge": "Best Seller",
+    "badgeColor": "bg-warning/20 text-warning",
     "icon": "https://i.ibb.co.com/gbLfbc52/social-media.png",
     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
     "buttonText": "Buy Now"

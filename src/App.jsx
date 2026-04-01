@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import './App.css'
 import Badges from './components/Badges/Badges';
 import Footer from './components/Footer/Footer';
@@ -8,6 +8,7 @@ import PremiumTools from './components/PremiumTools/PremiumTools';
 import Ready from './components/Ready/Ready';
 import Steps from './components/Steps/Steps';
 import Transparent from './components/Transparent/Transparent';
+import { ToastContainer } from 'react-toastify';
 
 
 const fetchTools = async () =>{
@@ -19,10 +20,13 @@ function App() {
 
   const toolsPromise = fetchTools();
 
+  const[totalItems,setTotalItems] = useState(0)
+  const [cartItems, setCartItems] = useState([]);
+
   return (
     <>
       <header>
-        <Navbar></Navbar>
+        <Navbar totalItems={totalItems}></Navbar>
         <Hero></Hero>
       </header>
       <main>
@@ -32,7 +36,13 @@ function App() {
             <span className="loading loading-spinner loading-xl"></span>
           }
         >
-          <PremiumTools toolsPromise={toolsPromise}></PremiumTools>
+          <PremiumTools
+            toolsPromise={toolsPromise}
+            setTotalItems={setTotalItems}
+            totalItems={totalItems}
+            cartItems={cartItems}
+            setCartItems={setCartItems}
+          ></PremiumTools>
         </Suspense>
         <Steps></Steps>
         <Transparent></Transparent>
@@ -41,6 +51,7 @@ function App() {
       <footer>
         <Footer></Footer>
       </footer>
+      <ToastContainer/>
     </>
   );
 }
