@@ -4,7 +4,7 @@ import { Play } from 'lucide-react';
 
 const Hero = () => {
     return (
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-screen pt-6">
         <div className="hero-content flex-col lg:flex-row-reverse gap-40">
           <img src={bannerImg} className="max-w-90 rounded-lg shadow-2xl" />
           <div>

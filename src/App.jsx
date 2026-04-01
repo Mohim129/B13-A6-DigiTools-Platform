@@ -27,14 +27,14 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className="space-y-8">
         <Navbar
           totalItems={totalItems}
           setSelectedType={setSelectedType}
         ></Navbar>
         <Hero></Hero>
       </header>
-      <main>
+      <main className="space-y-6">
         <Badges></Badges>
         <Suspense
           fallback={
