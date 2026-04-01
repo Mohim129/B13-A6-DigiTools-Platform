@@ -4,7 +4,7 @@ import React from 'react';
 
 const Ready = () => {
     return (
-      <div className="p-30 bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white text-center ">
+      <div className=" mx-auto py-30 bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white text-center ">
         <h1 className="text-[40px] font-semibold">
           Ready to Transform Your Workflow?
         </h1>
@@ -21,7 +21,7 @@ const Ready = () => {
             Explore Products
           </button>
           <button className="btn rounded-full bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white">
-             View Pricing
+            View Pricing
           </button>
         </div>
       </div>

@@ -2,7 +2,8 @@ import React from 'react';
 
 const Badges = () => {
     return (
-      <div className="p-15 bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white md:flex justify-around text-center ">
+      <div className=" w-full py-15 bg-linear-to-tr from-[#4F39F6] to-[#9514FA] text-white text-center ">
+        {/* <div className=" mx-auto md:flex justify-around text-center"> */}
         <span>
           <h1 className="text-[60px] font-bold">50K+</h1>
           <h3 className="text-[24px]">Active Users</h3>
@@ -19,6 +20,7 @@ const Badges = () => {
           <h1 className="text-[60px] font-bold">4.9</h1>
           <h3 className="text-[24px]">Rating</h3>
         </span>
+        {/* </div> */}
       </div>
     );
 };

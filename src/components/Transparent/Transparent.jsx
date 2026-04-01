@@ -2,15 +2,15 @@ import React from 'react';
 
 const Transparent = () => {
     return (
-      <div className="md:p-30 flex flex-col gap-8 justify-center items-center">
+      <div className="py-30 container mx-auto flex flex-col gap-8 justify-center items-center">
         <div className="text-center flex flex-col gap-6">
           <h1 className="text-5xl font-bold">Simple, Transparent Pricing</h1>
           <p className="text-gray-400">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
-        <div className="md:flex">
-          <div className="card w-96 bg-base-100 shadow-sm">
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="card max-w-96 bg-base-100 shadow-sm">
             <div className="card-body">
               <span className="badge badge-xs badge-warning">Most Popular</span>
               <div className="flex justify-between">
@@ -131,7 +131,7 @@ const Transparent = () => {
             </div>
           </div>
 
-          <div className="card w-96 bg-base-100 shadow-sm">
+          <div className="card max-w-96 bg-base-100 shadow-sm">
             <div className="card-body">
               <span className="badge badge-xs badge-warning">Most Popular</span>
               <div className="flex justify-between">
@@ -251,7 +251,7 @@ const Transparent = () => {
               </div>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-sm">
+          <div className="card max-w-96 bg-base-100 shadow-sm">
             <div className="card-body">
               <span className="badge badge-xs badge-warning">Most Popular</span>
               <div className="flex justify-between">

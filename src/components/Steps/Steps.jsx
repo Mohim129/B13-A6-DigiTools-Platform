@@ -5,7 +5,7 @@ import Rocket from './../../assets/rocket.png'
 
 const Steps = () => {
     return (
-      <div className="p-30 flex flex-col gap-8 my-10">
+      <div className="py-30 container mx-auto md:flex flex-col gap-8 my-10">
         <div className="text-center flex flex-col gap-8">
           <h1 className="text-5xl font-bold">Get Started in 3 Steps</h1>
           <p className="text-gray-400">
@@ -13,7 +13,7 @@ const Steps = () => {
           </p>
         </div>
 
-        <div className="md:flex justify-around items-center gap-8">
+        <div className="grid md:grid-cols-3 justify-around items-center gap-8">
           <div className="card shadow-2xl rounded-2xl   text-center flex gap-5 flex-col justify-center items-center pt-5 px-6 pb-22">
             <div className="w-full flex justify-end items-end">
               <div className="h-10 w-10 text-white rounded-full bg-linear-to-tr from-[#4F39F6] to-[#9514FA] flex justify-center items-center">

@@ -6,7 +6,7 @@ const Hero = () => {
     return (
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse gap-40">
-          <img src={bannerImg} className="max-w-sm rounded-lg shadow-2xl" />
+          <img src={bannerImg} className="max-w-90 rounded-lg shadow-2xl" />
           <div>
             <div className="flex badge rounded-full p-2 bg-[#E1E7FF] text-[#9514FA] mb-6">
               <div className=" w-[16px] h-[16px] p-2 rounded-full bg-[#9514FA]/20 flex justify-center items-center">
